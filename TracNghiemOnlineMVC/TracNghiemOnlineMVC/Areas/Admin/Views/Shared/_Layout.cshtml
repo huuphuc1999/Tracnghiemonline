@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/Assets/Index-Admin/Main-Admin.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="row Main">
+            <div class="col-md-2 " id="left">                
+                    <div id="top-left">
+                        <h3>@RenderSection("header", required: true)Trắc Nghiệm Online</h3>
+                    </div>                
+                @RenderPage("_Navigation.cshtml")
+            </div>
+
+            <div class="col-md-10" id="right">
+                <div class="row m-t-10">
+
+                    <div class="col-md-12 " id="Menu-Top">
+                        <nav class="navbar navbar-light fixed">
+
+                            <div class="col-md-10" id="Menu-Search">
+                                <form class="form-inline ">
+                                    <button class="navbar-toggler" id="btn-Menu" type="button">
+                                        <i class="icon-Menu fas fa-bars"></i>
+                                    </button>
+                                    <input class="TimKiem mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                                    <a href="#"><i class="icon-Menu fas fa-search"></i></a>
+                                </form>
+                            </div>
+
+                            <div class="col-md-2" id="top-icon">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#Avatar" class="btn-Avatar" data-toggle="collapse">
+                                            <img src="/Assets/Index-Admin/gai3.jpg" alt="user" class="rounded-circle" id="imgAvatar" style="width: 50%;">
+                                        </a>
+                                        <ul class="collapse" id="Avatar">
+                                            <li class="Avatar-con">
+                                                <a href="file:///D:/DoAn/Main/Main-Admin/ThongTin/ThongTin.html" class="TT-Avatar"><i class="fas fa-user icon-Avatar"></i>Thông Tin</a>
+                                            </li>
+
+                                            <li class="Avatar-con">
+                                                <a href="file:///D:/DoAn/login/login.html" class="TT-Avatar" id="DangXuat"><i class="fas fa-lock icon-Avatar"></i>Đăng Xuất</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </nav>
+                    </div>
+
+                    <div class="container-fluid">
+                        @if (TempData["AlertMessage"] != null)
+                        {
+                            <div class="alert @TempData["Alert Type"] hide">
+                                @TempData["AlertMessage"]
+                            </div>
+                        }
+
+                        @RenderBody()
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/Assets/Index-Admin/Main-Admin.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+</body>
+</html>

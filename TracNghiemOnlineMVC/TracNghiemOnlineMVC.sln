@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30717.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TracNghiemOnlineMVC", "taometlamroi\TracNghiemOnlineMVC.csproj", "{3DB12810-025C-433F-851F-C0370163D7B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{9AD0D001-4BDB-46AE-A5E9-CD2C391F909B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3DB12810-025C-433F-851F-C0370163D7B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DB12810-025C-433F-851F-C0370163D7B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DB12810-025C-433F-851F-C0370163D7B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DB12810-025C-433F-851F-C0370163D7B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9AD0D001-4BDB-46AE-A5E9-CD2C391F909B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AD0D001-4BDB-46AE-A5E9-CD2C391F909B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AD0D001-4BDB-46AE-A5E9-CD2C391F909B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AD0D001-4BDB-46AE-A5E9-CD2C391F909B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8E376E86-7966-457A-BA2E-6BB3962A0A7A}
+	EndGlobalSection
+EndGlobal

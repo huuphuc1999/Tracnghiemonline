@@ -1,0 +1,82 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+@section header{
+    Danh Sách Đề Thi
+}
+<link href="~/Assets/Index-Admin/DanhSachDeThi.css" rel="stylesheet" type="text/css">
+<div class="container-fluid">
+    <div class="col-md-11" id="bangdanhsach">
+        <header><h3>Danh Sách Đề Thi</h3></header>
+
+        <table style="width:100%">
+            <thead>
+                <tr>
+                    <th>Thứ Tự</th>
+                    <th><i>Tiêu Đề</i></th>
+                    <th><i>Thuộc Lớp</i></th>
+                    <th><i>Thời Gian</i></th>
+                    <th><i>Trạng Thái</i></th>
+                    <th><i>Ngày Tạo</i></th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td><i>1</i></td>
+                    <td><i>ĐỀ 1 - ADN, GEN (P1) - Có đáp án chi tiết</i></td>
+                    <td><i>Sinh học thầy Ken</i></td>
+                    <td><i>15 Phút</i></td>
+                    <td>
+                        <i>
+                            <div id="btn-BT">
+                                <button id="btn-Bat" onclick="Test(this)">Bật</button>
+                                <button id="btn-Tat" onclick="Test(this)">Tắt</button>
+                            </div>
+                        </i>
+                    </td>
+                    <td><i>2019-07-29 13:36:07</i></td>
+                </tr>
+
+                <tr>
+                    <td><i>2</i></td>
+                    <td><i>ĐỀ 2 - ADN, GEN (P2) - Có đáp án chi tiết</i></td>
+                    <td><i>Sinh học thầy Ken</i></td>
+                    <td><i>15 Phút</i></td>
+                    <td>
+                        <i>
+                            <div id="btn-BT">
+                                <button id="btn-Bat" onclick="Test(this)">Bật</button>
+                                <button id="btn-Tat" onclick="Test(this)">Tắt</button>
+                            </div>
+                        </i>
+                    </td>
+                    <td><i>2019-07-29 13:41:08</i></td>
+                </tr>
+
+                <tr>
+                    <td><i>3</i></td>
+                    <td><i>ĐỀ 3 - PROTEIN, MÃ DI TRUYỀN, DỊCH MÃ - Có đáp án chi tiết</i></td>
+                    <td><i>Sinh học thầy Ken</i></td>
+                    <td><i>15 Phút</i></td>
+                    <td>
+                        <i>
+                            <div id="btn-BT">
+                                <button id="btn-Bat" onclick="Test(this)">Bật</button>
+                                <button id="btn-Tat" onclick="Test(this)">Tắt</button>
+                            </div>
+                        </i>
+                    </td>
+                    <td><i>2019-07-29 13:55:50</i></td>
+                </tr>
+            </tbody>
+
+        </table>
+    </div>
+    <script src="~/Assets/Index-Admin/DanhSachDeThi.js"></script>
+</div>
+
+

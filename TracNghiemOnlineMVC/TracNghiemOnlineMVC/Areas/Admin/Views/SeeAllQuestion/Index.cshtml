@@ -1,0 +1,65 @@
+﻿@*@using Model.SeeAQViewModel
+    @model AllQuestion*@
+@model PagedList.IPagedList<Model.EF.Question>
+
+@using PagedList.Mvc;
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+@section header{
+    Ngân hàng câu hỏi
+}
+<link href="~/Assets/Index-Admin/NganHangCauHoi.css" rel="stylesheet" type="text/css">
+<div class="container-fluid">
+    <div class="col-md-11" id="bangdanhsach">
+        <header><h3>Ngân Hàng Câu Hỏi</h3></header>
+
+        <table style="width:100%">
+            <thead>
+                <tr>
+                    <th>Thứ Tự</th>
+                    <th><i>Tên Bài</i></th>
+                    <th><i>Tên Câu Hỏi</i></th>
+                    <th><i>Đáp Án 1</i></th>
+                    <th><i>Đáp Án 2</i></th>
+                    <th><i>Đáp Án 3</i></th>
+                    <th><i>Đáp Án 4</i></th>
+                    <th><i>Đáp Án Đúng</i></th>
+                    <th><i>Ngày Tạo</i></th>
+                    <th><i>Hành Động</i></th>
+                </tr>
+            </thead>
+            @foreach (var item in Model)
+            {
+                <tbody>
+
+                    <tr>
+                        <td>@item.QuestionsID</td>
+                        <td><i>Sinh Hoc</i></td>
+                        <td><i>@item.QuestionsName</i></td>
+                        <td><i>@item.Questions_A</i></td>
+                        <td><i>@item.Questions_B</i></td>
+                        <td><i>@item.Questions_C</i></td>
+                        <td><i>@item.Questions_D</i></td>
+                        <td><i>@item.Correct_Answer</i></td>
+                        <td><i>@item.CreatedDate</i></td>
+                        <td>
+                            <i>
+                                <div id="btn-BT">
+                                    <button id="btn-Bat"><i class="fa fa-edit"></i></button>
+                                    <button id="btn-Tat"><i class="fas fa-times"></i></button>
+                                </div>
+                            </i>
+                        </td>
+                    </tr>
+                </tbody>
+            }
+        </table>
+        @Html.PagedListPager(Model, Page => Url.Action("Index", new { Page }))
+    </div>
+    <script src="~/Assets/Index-Admin/NganHangCauHoi.js"></script>
+</div>
+
+

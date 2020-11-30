@@ -1,0 +1,85 @@
+﻿<nav class="sidebar">
+    <ul class="list-unstyled">
+        @*<li>
+            <div id="top-left">
+                <h3>@RenderSection("page-header",required: true)Trắc Nghiệm Online</h3>
+            </div>
+        </li>*@
+
+        <li>
+            <a href="#" class="TongQuan"><i class="icon-left fas fa-chart-line"></i>Tổng Quan </a>
+        </li>
+
+        <li class="text-muted menu-title">Quản lí đề</li>
+
+        <li>
+            <a href="#DeThi" class="btn-DeThi" data-toggle="collapse" aria-expanded="false">
+                <i class="icon-left fa  fa-edit"></i>Đề Thi
+                <span class="fas fa-caret-down"></span>
+            </a>
+            <ul class="collapse" id="DeThi">
+                <li class="con">
+                    <a href="/Admin/CreateExamQuestions/Index" class="btn-De ">Tạo Đề Mới</a>
+                </li>
+
+                <li class="con">
+                    <a href="/Admin/ListExamQuestions/Index" class="btn-De">Danh Sách Đề Thi</a>
+                </li>
+            </ul>
+        </li>
+
+        <li>
+            <a href="#Dethi" class="btn-CauHoi" data-toggle="collapse" aria-expanded="false">
+                <i class="icon-left fa  fa-cubes"></i>Câu Hỏi
+                <span class="fas fa-caret-down"></span>
+            </a>
+            <ul class="collapse" id="Dethi">
+                <li class="con">
+                    <a href="/Admin/AddQuestion/Index" class="btn-CauHoi">
+                        Thêm Câu Hỏi
+                    </a>
+                </li>
+
+                <li class="con">
+                    <a href="/Admin/SeeAllQuestion/Index" class="btn-CauHoi">
+                        Ngân Hàng Câu Hỏi
+                    </a>
+                </li>
+            </ul>
+        </li>
+
+        <li>
+            <a href="#" class="btn-Diem"><i class="icon-left fa  fa-calendar"></i>Điểm Số Học Sinh</a>
+        </li>
+
+        <li>
+            <a href="#" class="btn-Diem"><i class="icon-left fa  fa-edit"></i>Thêm Chương / Bài</a>
+        </li>
+
+        <li>
+            <a href="#HocSinh" class="btn-HocSinh" data-toggle="collapse" aria-expanded="false">
+                <i class="icon-left fa  fa-user"></i>Học Sinh
+                <span class="fas fa-caret-down"></span>
+            </a>
+            <ul class="collapse" id="HocSinh">
+                <li class="con">
+                    <a href="#" class="btn-HocSinh">
+                        Tạo Lớp
+                    </a>
+                </li>
+
+                <li class="con">
+                    <a href="#" class="btn-HocSinh">
+                        Thểm Học Sinh
+                    </a>
+                </li>
+
+                <li class="con">
+                    <a href="#" class="btn-HocSinh">
+                        Danh Sách Học Sinh
+                    </a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</nav>

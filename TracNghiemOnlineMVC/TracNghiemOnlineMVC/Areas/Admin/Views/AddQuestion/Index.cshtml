@@ -1,0 +1,124 @@
+﻿
+@using taometlamroi.Areas.Admin.Model;
+@model AddQuestion
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+@section header{
+    Tạo câu hỏi
+}
+<link href="~/Assets/Index-Admin/ThemCauHoi.css" rel="stylesheet" type="text/css">
+<div class="container-fluid">
+    <div class="col-md-11" id="bangdanhsach">
+        <div class="row">
+            @using (Html.BeginForm("AddQuestion", "AddQuestion", FormMethod.Post))
+            {
+                <div class="container-fluid">
+                    <div class="col-md-11" id="bangdanhsach">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label>Chọn môn</label>
+                                    @Html.DropDownListFor(model => model.LessonID, null, htmlAttributes: new { @class = "form-control" })
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label>ChọnChương</label>
+                                    @Html.DropDownListFor(model => model.CurriculumID, null, htmlAttributes: new { @class = "form-control" })
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label>Chọn Bài</label>
+                                    @*@Html.LabelFor(model => model.SubjecstID)*@
+                                    @Html.DropDownListFor(model => model.SubjectsID, null, htmlAttributes: new { @class = "form-control" })
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h5>Thêm Câu Hỏi</h5>
+                                <div>
+
+                                    @Html.TextAreaFor(model => model.QuestionsName, htmlAttributes: new { @id = "CauHoi" })
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5>Đáp Án 1</h5>
+                                <div>
+
+                                    @Html.TextAreaFor(model => model.Questions_A, htmlAttributes: new { @id = "CauHoi" })
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <h5>Đáp Án 2</h5>
+                                <div>
+                                    @Html.TextAreaFor(model => model.Questions_B, htmlAttributes: new { @id = "CauHoi" })
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5>Đáp Án 3</h5>
+                                <div>
+                                    @Html.TextAreaFor(model => model.Questions_C, htmlAttributes: new { @id = "CauHoi" })
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <h5>Đáp Án 4</h5>
+                                <div>
+                                    @Html.TextAreaFor(model => model.Questions_D, htmlAttributes: new { @id = "CauHoi" })
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h5>Giải Thích Câu Đúng</h5>
+                                <div>
+                                    @Html.TextAreaFor(model => model.Explain, htmlAttributes: new { @id = "CauHoi" })
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+
+                                    @*@Html.LabelFor(model => model.Correct_Answer, htmlAttributes: new { @id = "monhoc_id" })*@
+                                    <h5>
+                                        Chọn Đáp Án đúng
+                                    </h5>
+                                    @Html.TextBoxFor(model => model.Correct_Answer, htmlAttributes: new { @id = "monhoc_id" })
+                                </div>
+                            </div>
+                            <div class="col-md-6" id="Them">
+                                <button id="btn-Them"><span class="fas fa-plus" id="tao">..Tạo Câu Hỏi Mới..</span></button>
+                            </div>
+                        </div>
+                        <hr style="border: solid;">
+                    </div>
+                </div>
+             }
+        </div>        
+        <script src="~/Assets/Index-Admin/ThemCauHoi.js"></script>
+    </div>
+</div>
+    
+            
+              
+            
+
+

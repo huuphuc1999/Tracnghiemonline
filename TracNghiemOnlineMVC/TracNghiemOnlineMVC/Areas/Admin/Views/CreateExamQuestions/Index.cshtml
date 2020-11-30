@@ -1,0 +1,144 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+@section header{
+    Tạo Đề Thi
+}
+<link href="~/Assets/Index-Admin/TaoDeMoi.css" rel="stylesheet" type="text/css">
+<div class="container-fluid">
+    <div class="col-md-11" id="bangdanhsach">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label>Tên Đề Thi</label>
+                    <input type="text" id="tendethi"></input>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label>Chọn môn</label>
+                    <select class="form-control" id="monhoc_id" name="monhoc_id">
+                        <option value="0">Chọn môn</option>
+                        <option value="1">Toán</option>
+                        <option value="1">Lý</option>
+                        <option value="1">Hóa</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label>Thời Gian</label>
+                    <select class="form-control" id="monhoc_id" name="monhoc_id">
+                        <option value="0">Chọn thời gian</option>
+                        <option value="5">5 phút</option>
+                        <option value="10">10 phút</option>
+                        <option value="15">15 phút</option>
+                        <option value="45">45 phút</option>
+                        <option value="90">90 phút</option>
+                        <option value="120">120 phút</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label>Lớp</label>
+                    <select class="form-control" id="monhoc_id" name="monhoc_id">
+                        <option value="0">Chọn Lớp</option>
+                        <option value="1">Lớp 10</option>
+                        <option value="1">Lớp 11</option>
+                        <option value="1">Lớp 12</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <h5>Chọn câu hỏi</h5>
+                <table style="width:100%">
+                    <thead>
+                        <tr>
+                            <th>Chọn</th>
+                            <th>Tên chương</th>
+                            <th>Tên bài </th>
+                            <th>Tên câu hỏi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="text-align:center">
+                                <input id="check_cauhoi" data-id="250" type="checkbox">
+                            </td>
+                            <td><i>CHƯƠNG 1 - SINH 11</i></td>
+                            <td><i>DINH DƯỠNG THỰC VẬT</i></td>
+                            <td><i>Phân ở dạng nào sau đây sẽ được rễ cây hấp thụ ?</i></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 Trang ">
+                <nav>
+                    <ul class="pagination">
+                        <li class="page-item" type="Previous">
+                            <a href="#" class="btn-Trang"><i class="fas fa-backward"></i></a>
+                        </li>
+
+                        <li class="page-item" type="Previous">
+                            <a href="#" class="btn-Trang ">1</a>
+                        </li>
+
+                        <li class="page-item" type="Previous">
+                            <a href="#" class="btn-Trang">2</a>
+                        </li>
+
+                        <li class="page-item" type="Previous">
+                            <a href="#" class="btn-Trang">3</a>
+                        </li>
+
+                        <li class="page-item" type="Previous">
+                            <a href="#" class="btn-Trang">4</a>
+                        </li>
+
+                        <li class="page-item" type="Previous">
+                            <a href="#" class="btn-Trang ">5</a>
+                        </li>
+
+                        <li class="page-item" type="Previous">
+                            <a href="#" class="btn-Trang">6</a>
+                        </li>
+
+                        <li class="page-item" type="Previous">
+                            <a href="#" class="btn-Trang">7</a>
+                        </li>
+
+                        <li class="page-item" type="Previous">
+                            <a href="#" class="btn-Trang">8</a>
+                        </li>
+
+                        <li class="page-item" type="Next">
+                            <a href="#" class="btn-Trang"><i class="fas fa-forward"></i></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <hr style="border: solid;">
+
+        <div class="row">
+            <div class="col-md-3" id="Them">
+                <button id="btn-Them"><span class="fas fa-plus">..Tạo Đề Mới..</span></button>
+            </div>
+        </div>
+        <script src="~/Assets/Index-Admin/TaoDeMoi.js"></script>
+    </div>
+

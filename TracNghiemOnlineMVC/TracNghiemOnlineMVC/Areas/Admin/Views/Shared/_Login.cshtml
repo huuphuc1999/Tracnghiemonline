@@ -1,0 +1,26 @@
+﻿
+@using taometlamroi.Areas.Admin.Model;
+@model  LoginModel
+
+
+@using (Html.BeginForm("Login", "Login", FormMethod.Post))
+{
+    @Html.ValidationSummary(false, "", new { @class = "text-danger" });
+    <header>Đăng Nhập</header>
+    <div class="form-group">
+        <i class="fas fa-user"></i>
+
+        @Html.TextBoxFor(model => model.UserName, new { @class = "myInput", @autofocus = "autofocus" })
+    </div>
+
+    <div class="form-group">
+        <i class="fas fa-lock"></i>
+
+        @Html.PasswordFor(model => model.Password, new { @class = "myInput" })
+    </div>
+    <button type="submit" class="butt">Đăng Nhập</button>
+
+    <button type="button" class="butt" onclick="location.href='@Url.Action("Index", "Register")'">
+        Đăng ký
+    </button>
+}

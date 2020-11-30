@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  user-select: none;
+  box-sizing: border-box;
+  font-family: "Poppins" ,sans-serif;
+}
+
+.con{
+	list-style-type: none;
+}
+
+#left{
+	z-index: 1;
+}
+
+#right{
+	background-color: #DDDDDD;
+	z-index: 0;
+}
+
+.container-fluid{
+	min-height: 100vh;
+}
+
+#left.hide{
+	display: none;
+}
+
+.sidebar{
+	margin-top: 5%;
+}
+
+#top-left{
+	border-bottom: solid;
+	margin: 0;
+	padding: 0;
+}
+
+.TimKiem{
+	border-radius: 15px;
+	margin-left: 2%;
+}
+
+.TimKiem:focus{
+	outline: none;
+}
+
+.KhungBai{
+	padding: 2%;
+}
+
+.icon-Menu{
+	color: white;
+
+}
+
+.navbar{
+	background-color: #333333;
+	color: white;
+}
+
+.TenDe{
+	background-color: #00CCFF;
+}
+
+.icon{
+	padding: 2%;
+	color: white;
+}
+
+.card{
+	box-shadow: 3px 3px 10px rgba(0,0,0,0.5);
+}
+
+nav ul li{
+	line-height: 250%;
+}
+
+nav ul li a{
+	font-size: 18px;
+	display: block;
+	width: 100%;
+	color: black;
+}
+
+nav ul li a:hover{
+	color: 	#003399;
+	text-decoration: none;
+}
+
+nav ul li a span{
+	position: absolute;
+	right: 20px;
+}
+
+.icon-left{
+	padding: 7%;
+}
+
+.icon-De{
+	padding-left: 70%;
+	padding-bottom: 5%;
+}
+
+.TieuDe{
+	color: white;
+	padding: 5%;
+}
+
+#Main{
+	position: relative;
+	height: 100vh;
+}
+
+#left.hide{
+	z-index: 1;
+	position: absolute;
+
+}
+
+#right.hide{
+	z-index: 2;
+	position: absolute;
+	max-width: 100%;
+	margin: 0;
+}
+
+.TT-Avatar{
+	color: white;
+	padding: 5%;
+}
+
+#Menu-Top{
+	background-color: #333333;
+}
+
+#imgAvatar{
+	margin-left: 25%;
+}
+
+.Avatar-con{
+	list-style-type: none;
+}
+
+#DangXuat:hover{
+	color: red;
+}
+
+#ThongTin:hover{
+	color: cyan;
+}
+
+.icon-Avatar{
+	padding: 5%;
+}
+
+.form-group{
+	padding-top: 10%;
+}
+
+h3{
+	padding-top: 2%;
+}
+
+table, td, th {
+	
+  	border: 1px solid black;
+  	
+}
+
+i{
+	display: flex;
+	justify-content: center;
+	padding: 5%;
+}
+
+table {
+  border-collapse: collapse;
+
+}
+#bangdanhsach{
+	position: relative;
+	background-color: white;
+	margin:4%;
+}
+
+.page-item{
+	border: 1px solid black;
+	border-radius: 5px;
+}
+
+#CauHoi{
+	width: 100%;
+	height: 20vh;
+}
+
+
+#btn-Them{
+	display: flex;
+	width: 50%;
+	height: 10vh;
+	background-color: white;
+	color: #3366FF;
+	border-color: #3366FF;
+	display: flex;
+	justify-content: center;
+}
+
+#btn-Them:hover{
+	color: white;
+	background-color:#3366FF;
+}
+
+#btn-Them:focus{
+	outline: none;
+}
+
+#Them{
+	padding: 3%;
+}
+
+#taode{
+	margin-top: 2%;
+}
+
+#tao{
+	display: flex;
+	justify-content: center;
+	padding-top: 8%;
+}
